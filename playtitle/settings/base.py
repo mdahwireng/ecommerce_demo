@@ -139,9 +139,10 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "oscar.apps.search.context_preprocessors.search_form",
+
+                "oscar.apps.search.context_processors.search_form",
                 "oscar.apps.checkout.context_processors.checkout",
-                "oscar.apps.communication.notifications.context_preprocessors.notifications",
+                "oscar.apps.communication.notifications.context_processors.notifications",
                 "oscar.core.context_processors.metadata",
             ],
         },
@@ -269,3 +270,5 @@ HAYSTACK_CONNECTIONS = {
     'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
     },
 }
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
